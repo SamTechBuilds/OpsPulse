@@ -1,0 +1,32 @@
+import {useState} from 'react';
+import {Plus,Pencil,Trash2,Eye,Search,Download} from 'lucide-react';
+import {useApp,buildRecord} from '../lib/store';
+import {Rec,Status,Priority} from '../types';
+import {isOverdue} from '../lib/data';
+import {toCsv,download} from '../lib/importer';
+import {Head,FilterBar,Modal,Confirm,Field,Err,Badge,Empty,fdate} from '../components/ui';
+const blank=():Record<string,string>=>({id:'',title:'',category:'',employee:'',department:'',created:new Date().toISOString().slice(0,10),due:'',completed:'',status:'Pending',priority:'Medium',sla:'',resolution:''});
+export default function Records(){const {records,filtered,saveRecord,deleteRecord}=useApp();
+ const [q,setQ]=useState('');const [sk,setSk]=useState<keyof Rec>('created');const [dir,setDir]=useState(-1);const [pg,setPg]=useState(0);const PS=15;
+ const [form,setForm]=useState<Record<string,string>|null>(null);const [orig,setOrig]=useState<string|undefined>();const [e,setE]=useState<string|null>(null);const [view,setView]=useState<Rec|null>(null);const [del,setDel]=useState<Rec|null>(null);
+ const list=filtered.filter(r=>!q||(r.id+r.title).toLowerCase().includes(q.toLowerCase())).sort((a,b)=>dir*String(a[sk]??'').localeCompare(String(b[sk]??''),undefined,{numeric:true}));
+ const pages=Math.max(1,Math.ceil(list.length/PS)),p=Math.min(pg,pages-1),rows=list.slice(p*PS,p*PS+PS);
+ const th=(k:keyof Rec,l:string)=><th key={k} className="th cursor-pointer select-none" onClick={()=>{k===sk?setDir(-dir):(setSk(k),setDir(1))}} aria-sort={k===sk?(dir>0?'ascending':'descending'):'none'}>{l}{k===sk?(dir>0?' ▲':' ▼'):''}</th>;
+ const open=(r?:Rec)=>{setE(null);setOrig(r?.id);setForm(r?{...blank(),...Object.fromEntries(Object.entries(r).map(([k,v])=>[k,v==null?'':String(v)]))}:blank())};
+ const submit=()=>{const {rec,reasons}=buildRecord(k=>form![k]);if(!rec){setE(reasons.join('; '));return}const r=saveRecord(rec,orig);setE(r);if(!r)setForm(null)};
+ const exp=()=>{if(!list.length)return;download('opspulse-records.csv',toCsv(list.map(r=>({'Record ID':r.id,Title:r.title,Category:r.category,Employee:r.employee,Department:r.department,Created:r.created,Due:r.due,Completed:r.completed,Status:r.status,Priority:r.priority,'SLA (h)':r.sla??'','Resolution (h)':r.resolution??'',Overdue:isOverdue(r)?'Yes':'No'}))))};
+ const f=(k:string,l:string,t='text')=><Field label={l}><input type={t} className="input" value={form![k]} onChange={e=>setForm({...form!,[k]:e.target.value})}/></Field>;
+ return <div><Head title="Records"><button className="btn" onClick={exp} disabled={!list.length}><Download size={16}/>Export filtered CSV</button><button className="btn btn-p" onClick={()=>open()}><Plus size={16}/>Add record</button></Head><FilterBar/>
+ <div className="card mb-3 relative no-print"><Search size={14} className="absolute left-6 top-7 text-slate-400"/><input aria-label="Search by ID or title" className="input pl-8" placeholder="Search by ID or title" value={q} onChange={e=>{setQ(e.target.value);setPg(0)}}/></div>
+ {!records.length?<Empty title="No records" hint="Import a file or restore the sample dataset from the Import page."/>:
+ <div className="card p-0 overflow-x-auto"><table className="w-full"><thead><tr>{th('id','ID')}{th('title','Title')}{th('department','Department')}{th('employee','Employee')}{th('created','Created')}{th('due','Due')}{th('status','Status')}{th('priority','Priority')}<th className="th"></th></tr></thead>
+ <tbody>{rows.map(r=><tr key={r.id}><td className="td font-medium">{r.id}</td><td className="td">{r.title}</td><td className="td">{r.department}</td><td className="td">{r.employee}</td><td className="td">{fdate(r.created)}</td><td className={`td ${isOverdue(r)?'text-red-600 font-medium':''}`}>{fdate(r.due)}</td><td className="td"><Badge v={r.status}/></td><td className="td"><Badge v={r.priority}/></td>
+  <td className="td"><div className="flex gap-2"><button aria-label="View" onClick={()=>setView(r)}><Eye size={16}/></button><button aria-label="Edit" onClick={()=>open(r)}><Pencil size={16}/></button><button aria-label="Delete" className="text-red-600" onClick={()=>setDel(r)}><Trash2 size={16}/></button></div></td></tr>)}
+  {!rows.length&&<tr><td className="td text-center text-slate-400" colSpan={9}>No records match</td></tr>}</tbody></table>
+  <div className="flex items-center justify-between p-3 text-sm no-print"><span>{list.length} records · page {p+1} of {pages}</span><div className="flex gap-2"><button className="btn" disabled={p===0} onClick={()=>setPg(p-1)}>Prev</button><button className="btn" disabled={p>=pages-1} onClick={()=>setPg(p+1)}>Next</button></div></div></div>}
+ {form&&<Modal title={orig?'Edit record':'Add record'} onClose={()=>setForm(null)} wide><div className="grid sm:grid-cols-3 gap-3">{f('id','Record ID *')}{f('title','Title *')}{f('category','Category')}{f('employee','Employee *')}{f('department','Department *')}{f('created','Created *','date')}{f('due','Due date','date')}{f('completed','Completed date','date')}
+  <Field label="Status *"><select className="input" value={form.status} onChange={e=>setForm({...form,status:e.target.value})}>{(['Pending','In Progress','Completed'] as Status[]).map(x=><option key={x}>{x}</option>)}</select></Field>
+  <Field label="Priority"><select className="input" value={form.priority} onChange={e=>setForm({...form,priority:e.target.value})}>{(['Low','Medium','High','Critical'] as Priority[]).map(x=><option key={x}>{x}</option>)}</select></Field>{f('sla','SLA target (h)','number')}{f('resolution','Resolution (h)','number')}</div>
+  <Err e={e}/><div className="flex justify-end gap-2 mt-3"><button className="btn" onClick={()=>setForm(null)}>Cancel</button><button className="btn btn-p" onClick={submit}>Save</button></div></Modal>}
+ {view&&<Modal title={`${view.id} — ${view.title}`} onClose={()=>setView(null)}><dl className="grid grid-cols-2 gap-2 text-sm">{([['Category',view.category],['Employee',view.employee],['Department',view.department],['Created',fdate(view.created)],['Due',fdate(view.due)],['Completed',fdate(view.completed)],['Status',view.status],['Priority',view.priority],['SLA target',view.sla==null?'—':view.sla+' h'],['Resolution',view.resolution==null?'—':view.resolution+' h'],['Overdue',isOverdue(view)?'Yes':'No']] as const).map(([k,v])=><div key={k}><dt className="text-xs text-slate-500">{k}</dt><dd>{v}</dd></div>)}</dl></Modal>}
+ {del&&<Confirm msg={`Delete record ${del.id}? This cannot be undone.`} onNo={()=>setDel(null)} onYes={()=>{deleteRecord(del.id);setDel(null)}} label="Delete"/>}</div>}

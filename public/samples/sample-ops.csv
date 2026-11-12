@@ -1,0 +1,121 @@
+Record ID,Title,Category,Assigned Employee,Department,Created Date,Due Date,Completed Date,Status,Priority,SLA Target (hrs),Actual Resolution (hrs)
+OPS-1001,Order status query #100,Customer,Asha Menon,Customer Support,2026-10-07,2026-10-10,,In Progress,Medium,48,
+OPS-1002,Expense audit #101,Finance,Karthik Rao,Finance Operations,2026-10-17,2026-10-27,2026-10-19,Completed,Medium,48,35.6
+OPS-1003,Payroll correction #102,HR,Vikram Joshi,HR Services,2026-11-01,2026-11-06,2026-11-03,Completed,Medium,48,44.8
+OPS-1004,VPN access issue #103,IT,Divya Shah,IT Service Desk,2026-10-08,2026-10-18,2026-10-10,Completed,Medium,48,29.4
+OPS-1005,Warehouse stock mismatch #104,Logistics,Suresh Babu,Logistics,2026-09-29,2026-10-10,2026-10-02,Completed,Low,96,52.4
+OPS-1006,Account update #105,Customer,Fatima Khan,Customer Support,2026-08-03,2026-08-06,2026-08-06,Completed,Medium,48,54.1
+OPS-1007,Ledger correction #106,Finance,Karthik Rao,Finance Operations,2026-08-15,2026-08-27,2026-08-18,Completed,Medium,48,62.4
+OPS-1008,Exit clearance #107,HR,Sneha Pillai,HR Services,2026-09-04,2026-09-07,,Pending,Medium,48,
+OPS-1009,Software install #108,IT,Arvind Kumar,IT Service Desk,2026-07-29,2026-08-06,2026-07-30,Completed,High,24,23
+OPS-1010,Shipment delay #109,Logistics,Pooja Verma,Logistics,2026-07-24,2026-07-31,2026-07-25,Completed,Critical,8,9.3
+OPS-1011,Order status query #110,Customer,Asha Menon,Customer Support,2026-08-11,2026-08-15,2026-08-15,Completed,Low,96,86
+OPS-1012,Ledger correction #111,Finance,Karthik Rao,Finance Operations,2026-09-29,2026-10-03,2026-10-03,Completed,Low,96,86
+OPS-1013,Exit clearance #112,HR,Sneha Pillai,HR Services,2026-07-23,2026-08-02,2026-07-24,Completed,Critical,8,5.9
+OPS-1014,VPN access issue #113,IT,Imran Ali,IT Service Desk,2026-10-07,2026-10-15,2026-10-09,Completed,High,24,35
+OPS-1015,Route replanning #114,Logistics,Suresh Babu,Logistics,2026-10-23,2026-11-04,,In Progress,Low,96,
+OPS-1016,Account update #115,Customer,Fatima Khan,Customer Support,2026-09-15,2026-09-20,2026-09-18,Completed,Medium,48,53.7
+OPS-1017,Invoice reconciliation #116,Finance,Karthik Rao,Finance Operations,2026-10-03,2026-10-14,2026-10-04,Completed,High,24,9.6
+OPS-1018,Exit clearance #117,HR,Sneha Pillai,HR Services,2026-10-08,2026-10-19,2026-10-09,Completed,High,24,23.4
+OPS-1019,Laptop provisioning #118,IT,Divya Shah,IT Service Desk,2026-10-22,2026-10-31,2026-10-23,Completed,High,24,16
+OPS-1020,Shipment delay #119,Logistics,Pooja Verma,Logistics,2026-09-20,2026-09-26,2026-09-22,Completed,High,24,27.9
+OPS-1021,Order status query #120,Customer,Rohan Iyer,Customer Support,2026-09-16,2026-09-24,2026-09-18,Completed,High,24,26.3
+OPS-1022,Vendor payment #121,Finance,Karthik Rao,Finance Operations,2026-09-28,2026-10-02,2026-09-30,Completed,High,24,29.5
+OPS-1023,Onboarding paperwork #122,HR,Sneha Pillai,HR Services,2026-08-10,2026-08-20,2026-08-11,Completed,Critical,8,5.2
+OPS-1024,Laptop provisioning #123,IT,Divya Shah,IT Service Desk,2026-08-25,2026-09-02,2026-08-26,Completed,Critical,8,7.7
+OPS-1025,Route replanning #124,Logistics,Suresh Babu,Logistics,2026-08-15,2026-08-25,2026-08-22,Completed,Low,96,151.2
+OPS-1026,Order status query #125,Customer,Rohan Iyer,Customer Support,2026-08-09,2026-08-21,,In Progress,Low,96,
+OPS-1027,Expense audit #126,Finance,Karthik Rao,Finance Operations,2026-08-19,2026-08-26,2026-08-20,Completed,Critical,8,7.3
+OPS-1028,Payroll correction #127,HR,Vikram Joshi,HR Services,2026-10-31,2026-11-07,,Pending,Medium,48,
+OPS-1029,VPN access issue #128,IT,Imran Ali,IT Service Desk,2026-09-16,2026-09-22,2026-09-17,Completed,Critical,8,11.2
+OPS-1030,Delivery reschedule #129,Logistics,Naveen Reddy,Logistics,2026-10-03,2026-10-12,,In Progress,High,24,
+OPS-1031,Refund request #130,Customer,Fatima Khan,Customer Support,2026-10-23,2026-10-28,2026-10-25,Completed,High,24,26.3
+OPS-1032,Invoice reconciliation #131,Finance,Meera Nair,Finance Operations,2026-09-29,2026-10-05,2026-09-30,Completed,Critical,8,4.6
+OPS-1033,Exit clearance #132,HR,Vikram Joshi,HR Services,2026-07-24,2026-08-01,,Pending,High,24,
+OPS-1034,Password reset #133,IT,Divya Shah,IT Service Desk,2026-08-25,2026-09-05,2026-08-27,Completed,High,24,32.7
+OPS-1035,Warehouse stock mismatch #134,Logistics,Naveen Reddy,Logistics,2026-08-26,2026-09-07,,In Progress,Critical,8,
+OPS-1036,Refund request #135,Customer,Asha Menon,Customer Support,2026-09-05,2026-09-13,2026-09-06,Completed,High,24,15.2
+OPS-1037,Vendor payment #136,Finance,Meera Nair,Finance Operations,2026-11-05,2026-11-16,2026-11-10,Completed,Low,96,118.3
+OPS-1038,Exit clearance #137,HR,Sneha Pillai,HR Services,2026-10-10,2026-10-17,2026-10-11,Completed,Critical,8,5.3
+OPS-1039,Password reset #138,IT,Imran Ali,IT Service Desk,2026-09-10,2026-09-19,2026-09-13,Completed,Low,96,49.4
+OPS-1040,Route replanning #139,Logistics,Naveen Reddy,Logistics,2026-08-12,2026-08-21,2026-08-17,Completed,Low,96,110.5
+OPS-1041,Refund request #140,Customer,Rohan Iyer,Customer Support,2026-10-28,2026-11-07,,Pending,Critical,8,
+OPS-1042,Vendor payment #141,Finance,Karthik Rao,Finance Operations,2026-08-29,2026-09-08,2026-08-30,Completed,Critical,8,5.2
+OPS-1043,Leave policy query #142,HR,Vikram Joshi,HR Services,2026-09-07,2026-09-14,2026-09-09,Completed,High,24,24.7
+OPS-1044,VPN access issue #143,IT,Divya Shah,IT Service Desk,2026-10-30,2026-11-06,2026-11-01,Completed,High,24,28.9
+OPS-1045,Route replanning #144,Logistics,Suresh Babu,Logistics,2026-09-20,2026-10-02,2026-09-22,Completed,Medium,48,28.5
+OPS-1046,Account update #145,Customer,Rohan Iyer,Customer Support,2026-09-25,2026-10-02,2026-09-27,Completed,High,24,25.6
+OPS-1047,Ledger correction #146,Finance,Karthik Rao,Finance Operations,2026-08-01,2026-08-06,2026-08-02,Completed,Medium,48,22.3
+OPS-1048,Exit clearance #147,HR,Sneha Pillai,HR Services,2026-09-28,2026-10-05,2026-09-29,Completed,High,24,9.9
+OPS-1049,Laptop provisioning #148,IT,Divya Shah,IT Service Desk,2026-10-03,2026-10-11,2026-10-08,Completed,Low,96,111.1
+OPS-1050,Delivery reschedule #149,Logistics,Pooja Verma,Logistics,2026-08-08,2026-08-17,2026-08-10,Completed,High,24,37.8
+OPS-1051,Refund request #150,Customer,Fatima Khan,Customer Support,2026-10-22,2026-10-25,2026-10-24,Completed,Low,96,39
+OPS-1052,Ledger correction #151,Finance,Meera Nair,Finance Operations,2026-08-23,2026-08-28,2026-08-24,Completed,High,24,9.9
+OPS-1053,Leave policy query #152,HR,Sneha Pillai,HR Services,2026-08-16,2026-08-26,2026-08-17,Completed,High,24,18.4
+OPS-1054,Software install #153,IT,Lakshmi Devi,IT Service Desk,2026-11-01,2026-11-06,,In Progress,High,24,
+OPS-1055,Warehouse stock mismatch #154,Logistics,Suresh Babu,Logistics,2026-09-03,2026-09-08,,In Progress,Critical,8,
+OPS-1056,Refund request #155,Customer,Fatima Khan,Customer Support,2026-10-09,2026-10-15,2026-10-10,Completed,Critical,8,9.6
+OPS-1057,Vendor payment #156,Finance,Meera Nair,Finance Operations,2026-10-31,2026-11-12,2026-11-01,Completed,Critical,8,7.1
+OPS-1058,Exit clearance #157,HR,Sneha Pillai,HR Services,2026-08-21,2026-08-29,2026-08-25,Completed,Low,96,90.9
+OPS-1059,VPN access issue #158,IT,Lakshmi Devi,IT Service Desk,2026-10-11,2026-10-19,2026-10-12,Completed,Critical,8,3.5
+OPS-1060,Warehouse stock mismatch #159,Logistics,Suresh Babu,Logistics,2026-10-25,2026-10-29,,In Progress,High,24,
+OPS-1061,Refund request #160,Customer,Rohan Iyer,Customer Support,2026-07-26,2026-07-29,2026-07-27,Completed,Critical,8,5.5
+OPS-1062,Expense audit #161,Finance,Karthik Rao,Finance Operations,2026-10-26,2026-11-02,,In Progress,Medium,48,
+OPS-1063,Leave policy query #162,HR,Sneha Pillai,HR Services,2026-08-18,2026-08-27,2026-08-19,Completed,Critical,8,3.8
+OPS-1064,Software install #163,IT,Lakshmi Devi,IT Service Desk,2026-08-23,2026-09-03,2026-08-26,Completed,Medium,48,54.5
+OPS-1065,Route replanning #164,Logistics,Suresh Babu,Logistics,2026-09-30,2026-10-09,,Pending,High,24,
+OPS-1066,Account update #165,Customer,Asha Menon,Customer Support,2026-11-08,2026-11-11,,Pending,Medium,48,
+OPS-1067,Ledger correction #166,Finance,Meera Nair,Finance Operations,2026-10-19,2026-10-25,2026-10-22,Completed,Low,96,66.6
+OPS-1068,Onboarding paperwork #167,HR,Sneha Pillai,HR Services,2026-10-10,2026-10-20,,Pending,Medium,48,
+OPS-1069,Password reset #168,IT,Divya Shah,IT Service Desk,2026-10-05,2026-10-12,2026-10-07,Completed,Medium,48,42.3
+OPS-1070,Delivery reschedule #169,Logistics,Naveen Reddy,Logistics,2026-10-31,2026-11-07,2026-11-01,Completed,High,24,16.2
+OPS-1071,Order status query #170,Customer,Asha Menon,Customer Support,2026-09-13,2026-09-18,2026-09-14,Completed,High,24,19.1
+OPS-1072,Ledger correction #171,Finance,Meera Nair,Finance Operations,2026-10-19,2026-10-27,,Pending,Low,96,
+OPS-1073,Payroll correction #172,HR,Vikram Joshi,HR Services,2026-08-22,2026-09-02,2026-08-24,Completed,Medium,48,25.5
+OPS-1074,VPN access issue #173,IT,Lakshmi Devi,IT Service Desk,2026-10-12,2026-10-23,2026-10-14,Completed,Medium,48,37
+OPS-1075,Route replanning #174,Logistics,Suresh Babu,Logistics,2026-10-01,2026-10-11,,Pending,High,24,
+OPS-1076,Order status query #175,Customer,Asha Menon,Customer Support,2026-09-05,2026-09-16,2026-09-06,Completed,High,24,22.4
+OPS-1077,Ledger correction #176,Finance,Karthik Rao,Finance Operations,2026-10-10,2026-10-15,2026-10-12,Completed,High,24,30.8
+OPS-1078,Onboarding paperwork #177,HR,Sneha Pillai,HR Services,2026-08-31,2026-09-12,2026-09-02,Completed,Medium,48,27.7
+OPS-1079,VPN access issue #178,IT,Arvind Kumar,IT Service Desk,2026-08-11,2026-08-22,2026-08-13,Completed,Medium,48,45.6
+OPS-1080,Warehouse stock mismatch #179,Logistics,Suresh Babu,Logistics,2026-10-17,2026-10-28,2026-10-18,Completed,Critical,8,9.9
+OPS-1081,Complaint escalation #180,Customer,Rohan Iyer,Customer Support,2026-07-30,2026-08-05,2026-08-01,Completed,Low,96,43.2
+OPS-1082,Ledger correction #181,Finance,Karthik Rao,Finance Operations,2026-09-26,2026-10-07,2026-09-28,Completed,High,24,24.8
+OPS-1083,Exit clearance #182,HR,Sneha Pillai,HR Services,2026-10-31,2026-11-04,,Pending,High,24,
+OPS-1084,Password reset #183,IT,Divya Shah,IT Service Desk,2026-08-26,2026-09-02,2026-08-29,Completed,Medium,48,56.8
+OPS-1085,Delivery reschedule #184,Logistics,Pooja Verma,Logistics,2026-07-25,2026-08-03,2026-07-28,Completed,Medium,48,50.9
+OPS-1086,Order status query #185,Customer,Fatima Khan,Customer Support,2026-10-18,2026-10-26,2026-10-21,Completed,Low,96,52.6
+OPS-1087,Expense audit #186,Finance,Meera Nair,Finance Operations,2026-09-29,2026-10-09,2026-09-30,Completed,Critical,8,5.3
+OPS-1088,Exit clearance #187,HR,Sneha Pillai,HR Services,2026-09-10,2026-09-22,2026-09-11,Completed,High,24,19.1
+OPS-1089,Password reset #188,IT,Imran Ali,IT Service Desk,2026-09-11,2026-09-18,2026-09-14,Completed,Medium,48,70.6
+OPS-1090,Route replanning #189,Logistics,Naveen Reddy,Logistics,2026-09-05,2026-09-17,,In Progress,Medium,48,
+OPS-1091,Complaint escalation #190,Customer,Asha Menon,Customer Support,2026-09-21,2026-10-01,2026-09-22,Completed,High,24,10.9
+OPS-1092,Expense audit #191,Finance,Karthik Rao,Finance Operations,2026-09-24,2026-10-03,2026-09-25,Completed,Medium,48,23.9
+OPS-1093,Onboarding paperwork #192,HR,Sneha Pillai,HR Services,2026-09-29,2026-10-10,2026-10-03,Completed,Low,96,85.7
+OPS-1094,Laptop provisioning #193,IT,Divya Shah,IT Service Desk,2026-09-21,2026-10-02,2026-09-24,Completed,Medium,48,51
+OPS-1095,Warehouse stock mismatch #194,Logistics,Suresh Babu,Logistics,2026-09-17,2026-09-21,2026-09-18,Completed,Critical,8,12
+OPS-1096,Account update #195,Customer,Asha Menon,Customer Support,2026-09-03,2026-09-15,2026-09-07,Completed,Low,96,72.9
+OPS-1097,Invoice reconciliation #196,Finance,Meera Nair,Finance Operations,2026-11-09,2026-11-20,2026-11-10,Completed,Medium,48,33.8
+OPS-1098,Exit clearance #197,HR,Sneha Pillai,HR Services,2026-10-02,2026-10-09,2026-10-03,Completed,High,24,19.9
+OPS-1099,VPN access issue #198,IT,Imran Ali,IT Service Desk,2026-11-05,2026-11-11,2026-11-07,Completed,High,24,29.2
+OPS-1100,Warehouse stock mismatch #199,Logistics,Pooja Verma,Logistics,2026-10-21,2026-10-26,2026-10-23,Completed,High,24,30.1
+OPS-1101,Order status query #200,Customer,Asha Menon,Customer Support,2026-08-31,2026-09-06,2026-09-02,Completed,Medium,48,48
+OPS-1102,Invoice reconciliation #201,Finance,Karthik Rao,Finance Operations,2026-08-12,2026-08-23,2026-08-14,Completed,Medium,48,47.8
+OPS-1103,Payroll correction #202,HR,Vikram Joshi,HR Services,2026-10-05,2026-10-13,2026-10-06,Completed,Critical,8,7.3
+OPS-1104,Software install #203,IT,Arvind Kumar,IT Service Desk,2026-11-06,2026-11-17,2026-11-09,Completed,Medium,48,49.9
+OPS-1105,Shipment delay #204,Logistics,Suresh Babu,Logistics,2026-11-04,2026-11-09,2026-11-09,Completed,Low,96,102.7
+OPS-1106,Refund request #205,Customer,Rohan Iyer,Customer Support,2026-10-02,2026-10-10,2026-10-04,Completed,High,24,26.9
+OPS-1107,Expense audit #206,Finance,Karthik Rao,Finance Operations,2026-08-08,2026-08-18,2026-08-11,Completed,Low,96,67.2
+OPS-1108,Payroll correction #207,HR,Vikram Joshi,HR Services,2026-10-07,2026-10-13,2026-10-08,Completed,High,24,15.2
+OPS-1109,VPN access issue #208,IT,Imran Ali,IT Service Desk,2026-11-05,2026-11-16,2026-11-08,Completed,Medium,48,59.1
+OPS-1110,Route replanning #209,Logistics,Pooja Verma,Logistics,2026-10-20,2026-10-30,,Pending,Low,96,
+OPS-1111,Order status query #210,Customer,Rohan Iyer,Customer Support,2026-08-05,2026-08-09,,Pending,Critical,8,
+OPS-1112,Vendor payment #211,Finance,Karthik Rao,Finance Operations,2026-08-20,2026-08-27,2026-08-21,Completed,Critical,8,7.3
+OPS-1113,Onboarding paperwork #212,HR,Sneha Pillai,HR Services,2026-08-15,2026-08-21,2026-08-16,Completed,Critical,8,5.9
+OPS-1114,Software install #213,IT,Imran Ali,IT Service Desk,2026-10-31,2026-11-04,,Pending,High,24,
+OPS-1115,Route replanning #214,Logistics,Suresh Babu,Logistics,2026-07-24,2026-08-03,2026-07-25,Completed,Critical,8,3.9
+OPS-1116,Order status query #215,Customer,Asha Menon,Customer Support,2026-08-29,2026-09-05,,Pending,Critical,8,
+OPS-1117,Expense audit #216,Finance,Karthik Rao,Finance Operations,2026-10-18,2026-10-26,2026-10-23,Completed,Low,96,111.4
+OPS-1118,Leave policy query #217,HR,Sneha Pillai,HR Services,2026-09-02,2026-09-08,2026-09-04,Completed,High,24,29.4
+OPS-1119,Laptop provisioning #218,IT,Lakshmi Devi,IT Service Desk,2026-09-21,2026-10-01,2026-09-22,Completed,Critical,8,10.3
+OPS-1120,Warehouse stock mismatch #219,Logistics,Naveen Reddy,Logistics,2026-09-16,2026-09-20,2026-09-17,Completed,Critical,8,6.8

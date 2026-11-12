@@ -1,0 +1,22 @@
+Ticket No,Summary,Owner,Team,Opened,Target Date,Closed,State,Severity,Hours Taken,SLA Hours
+T-100,Task 0,Priya S,IT Service Desk,2026-10-01,2026-10-20,,Open,High,,24
+T-101,Task 1,Priya S,IT Service Desk,2026-10-02,2026-10-20,2026-10-11,Done,High,12,24
+T-102,Task 2,Priya S,IT Service Desk,2026-10-03,2026-10-20,,Open,High,,24
+T-103,Task 3,Priya S,IT Service Desk,2026-10-04,2026-10-20,2026-10-13,Done,High,12,24
+T-104,Task 4,Priya S,IT Service Desk,2026-10-05,2026-10-20,,Open,High,,24
+T-105,Task 5,Priya S,IT Service Desk,2026-10-06,2026-10-20,2026-10-15,Done,High,12,24
+T-106,Task 6,Priya S,IT Service Desk,2026-10-07,2026-10-20,,Open,High,,24
+T-107,Task 7,Priya S,IT Service Desk,2026-10-08,2026-10-20,2026-10-17,Done,High,12,24
+T-108,Task 8,Priya S,IT Service Desk,2026-10-01,2026-10-20,,Open,High,,24
+T-109,Task 9,Priya S,IT Service Desk,2026-10-02,2026-10-20,2026-10-11,Done,High,12,24
+T-110,Task 10,Priya S,IT Service Desk,2026-10-03,2026-10-20,,Open,High,,24
+T-111,Task 11,Priya S,IT Service Desk,2026-10-04,2026-10-20,2026-10-13,Done,High,12,24
+T-112,Task 12,Priya S,IT Service Desk,2026-10-05,2026-10-20,,Open,High,,24
+T-113,Task 13,Priya S,IT Service Desk,2026-10-06,2026-10-20,2026-10-15,Done,High,12,24
+T-101,Task 1,Priya S,IT Service Desk,2026-02-31,2026-10-20,2026-10-11,Done,High,12,24
+T-101,Task 1,,IT Service Desk,2026-10-02,2026-10-20,2026-10-11,Done,High,12,24
+T-101,Task 1,Priya S,IT Service Desk,2026-10-02,2026-10-20,2026-10-11,Banana,High,12,24
+T-101,Task 1,Priya S,IT Service Desk,2026-10-02,2026-10-20,,Done,High,12,24
+T-101,Task 1,Priya S,IT Service Desk,2026-10-05,2026-10-20,2026-10-01,Done,High,12,24
+T-102,Task 2,Priya S,IT Service Desk,2026-10-03,2026-10-20,,Open,High,,24
+T-103,Task 3,Priya S,IT Service Desk,2026-10-04,2026-10-20,2026-10-13,Done,High,12,24
